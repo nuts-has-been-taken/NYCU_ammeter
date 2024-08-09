@@ -31,7 +31,7 @@
 
 ### 3. 設定排程工作
 
-Windows
+### Windows
 
 - 在 windows 搜尋 `工作排程器` 並且打開
 - 點擊 `建立工作` 在一般選項填入基本資訊
@@ -41,7 +41,8 @@ Windows
 - 點擊 `動作` 選擇 project 內的 electric.bat
   ![alt text](images/README/image-2.png)
 - `條件``設定` 依自己喜好調整
-  Linux
+
+### Linux
 - 使用指令叫出 crontab 文件
 
 ```
