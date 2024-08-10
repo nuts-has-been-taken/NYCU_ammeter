@@ -16,7 +16,7 @@ def main():
         try:
             res, t_before, cost = sheet_op.workbook_save(t, balance)
         except Exception as e:
-            line_op.send(status="excel_false", text=f"儲存至 excel 時出現了問題，如果可以請檢查錯誤，msg error:{e}")
+            line_op.send(status="excel_false", text=f"儲存至 excel 時出現了問題，如果可以請檢查錯誤\nmsg error : {e}")
             return
         line_op.send(status=res, t_before=t_before, t_now=t, cost=cost, balance=balance)
     else:
