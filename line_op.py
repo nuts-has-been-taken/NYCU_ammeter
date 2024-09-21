@@ -30,9 +30,8 @@ def success(t_before, t_now, cost, balance):
     return
 
 def top_up(t_before, cost, balance):
-    date_bef = t_before.strftime("%Y-%m-%d")
     msg = "電費通知\n"
-    msg += f"""你似乎儲值了，{date_bef} 時你還有 {cost} 元\n現在你的餘額是 {balance} 元"""
+    msg += f"""你似乎儲值了，{t_before}\n時你還有 {cost} 元\n現在你的餘額是 {balance} 元"""
     send_line_notify(msg)
     return
 
